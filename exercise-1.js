@@ -1,6 +1,6 @@
 function sorting(arrNumber) {
   // code di sini
-  
+  // sorting array using buble sort
   var temp;
   for (var i = 0; i < arrNumber.length; i++) {
     for (var j = 0; j < arrNumber.length; j++) {
@@ -17,13 +17,17 @@ function sorting(arrNumber) {
 
 function getTotal(arrNumber) {
   // code di sini
+  // handler for empty array parameter
   if(arrNumber[0] === undefined) {
     return '';
   }
   
+  // init variable biggest with first value from the array
+  // set count to 1 as biggest variable is counted 1
   var biggest = arrNumber[0]
   var count = 1
 
+  //loop through array and find the same value as biggest and add count by 1 
   for (var i = 1; i < arrNumber.length; i++) {
     if (arrNumber[i] === biggest) {
       count++;
