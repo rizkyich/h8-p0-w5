@@ -24,8 +24,8 @@ function getTotal(arrNumber) {
   
   // init variable biggest with first value from the array
   // set count to 1 as biggest variable is counted 1
-  var biggest = arrNumber[0]
-  var count = 1
+  var biggest = arrNumber[0];
+  var count = 1;
 
   //loop through array and find the same value as biggest and add count by 1 
   for (var i = 1; i < arrNumber.length; i++) {
